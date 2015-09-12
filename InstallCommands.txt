@@ -1,0 +1,70 @@
+maheshs-mbp-2:NodeJs-SSL maheshrajannan$ node www.js 
+module.js:338
+    throw err;
+          ^
+Error: Cannot find module 'debug'
+    at Function.Module._resolveFilename (module.js:336:15)
+    at Function.Module._load (module.js:278:25)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Object.<anonymous> (/Users/maheshrajannan/Concepts/NodeJs/SSL/SimpleSSL/NodeJs-SSL/www.js:5:13)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:501:10)
+maheshs-mbp-2:NodeJs-SSL maheshrajannan$ npm install path --save
+path@0.11.14 node_modules/path
+maheshs-mbp-2:NodeJs-SSL maheshrajannan$ npm install fs --save
+npm WARN package.json path@0.11.14 path is also the name of a node core module.
+fs@0.0.2 node_modules/fs
+maheshs-mbp-2:NodeJs-SSL maheshrajannan$ npm install https --save
+npm WARN package.json path@0.11.14 path is also the name of a node core module.
+npm WARN package.json fs@0.0.2 fs is also the name of a node core module.
+npm WARN package.json fs@0.0.2 No description
+npm WARN package.json fs@0.0.2 No repository field.
+https@1.0.0 node_modules/https
+maheshs-mbp-2:NodeJs-SSL maheshrajannan$ npm install debug --save
+npm WARN package.json fs@0.0.2 fs is also the name of a node core module.
+npm WARN package.json fs@0.0.2 No description
+npm WARN package.json fs@0.0.2 No repository field.
+npm WARN package.json https@1.0.0 https is also the name of a node core module.
+npm WARN package.json https@1.0.0 No repository field.
+npm WARN package.json path@0.11.14 path is also the name of a node core module.
+debug@2.2.0 node_modules/debug
+└── ms@0.7.1
+maheshs-mbp-2:NodeJs-SSL maheshrajannan$ cat package.json 
+{
+  "name": "NodeJs-SSL",
+  "version": "1.0.0",
+  "description": "simple ssl concept",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maheshrajannan/NodeJs-SSL.git"
+  },
+  "keywords": [
+    "Node",
+    "Js",
+    "SSL",
+    "Simple",
+    "Start"
+  ],
+  "author": "Mahesh Rajannan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maheshrajannan/NodeJs-SSL/issues"
+  },
+  "homepage": "https://github.com/maheshrajannan/NodeJs-SSL",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "fs": "0.0.2",
+    "https": "^1.0.0",
+    "path": "^0.11.14"
+  }
+}
+maheshs-mbp-2:NodeJs-SSL maheshrajannan$ 
+
