@@ -1,0 +1,56 @@
+Maheshs-MacBook-Pro-2:NodeJs-SSL maheshrajannan$ npm install -g mocha
+npm ERR! tar.unpack untar error /Users/maheshrajannan/.npm/mocha/2.3.2/package.tgz
+npm ERR! Darwin 13.4.0
+npm ERR! argv "node" "/usr/local/bin/npm" "install" "-g" "mocha"
+npm ERR! node v0.12.2
+npm ERR! npm  v2.7.4
+npm ERR! path /usr/local/lib/node_modules/mocha
+npm ERR! code EACCES
+npm ERR! errno -13
+
+npm ERR! Error: EACCES, mkdir '/usr/local/lib/node_modules/mocha'
+npm ERR!     at Error (native)
+npm ERR!  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/mocha']
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   path: '/usr/local/lib/node_modules/mocha',
+npm ERR!   fstream_type: 'Directory',
+npm ERR!   fstream_path: '/usr/local/lib/node_modules/mocha',
+npm ERR!   fstream_class: 'DirWriter',
+npm ERR!   fstream_stack: 
+npm ERR!    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+npm ERR!      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+npm ERR!      'FSReqWrap.oncomplete (fs.js:95:15)' ] }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/maheshrajannan/Concepts/NodeJs/SSL/SimpleSSL/NodeJs-SSL/npm-debug.log
+Maheshs-MacBook-Pro-2:NodeJs-SSL maheshrajannan$ sudo npm install -g mocha
+Password:
+/usr/local/bin/mocha -> /usr/local/lib/node_modules/mocha/bin/mocha
+/usr/local/bin/_mocha -> /usr/local/lib/node_modules/mocha/bin/_mocha
+mocha@2.3.2 /usr/local/lib/node_modules/mocha
+├── escape-string-regexp@1.0.2
+├── supports-color@1.2.0
+├── growl@1.8.1
+├── commander@2.3.0
+├── diff@1.4.0
+├── debug@2.0.0 (ms@0.6.2)
+├── mkdirp@0.5.0 (minimist@0.0.8)
+├── glob@3.2.3 (inherits@2.0.1, graceful-fs@2.0.3, minimatch@0.2.14)
+└── jade@1.11.0 (character-parser@1.2.1, void-elements@2.0.1, commander@2.6.0, clean-css@3.4.1, jstransformer@0.0.2, with@4.0.3, constantinople@3.0.2, transformers@2.1.0, uglify-js@2.4.24)
+Maheshs-MacBook-Pro-2:NodeJs-SSL maheshrajannan$ clear
+
+Maheshs-MacBook-Pro-2:NodeJs-SSL maheshrajannan$ sudo npm install chai
+npm WARN package.json fs@0.0.2 fs is also the name of a node core module.
+npm WARN package.json fs@0.0.2 No description
+npm WARN package.json fs@0.0.2 No repository field.
+npm WARN package.json path@0.11.14 path is also the name of a node core module.
+npm WARN package.json https@1.0.0 https is also the name of a node core module.
+npm WARN package.json https@1.0.0 No repository field.
+chai@3.2.0 node_modules/chai
+├── assertion-error@1.0.1
+├── type-detect@1.0.0
+└── deep-eql@0.1.3 (type-detect@0.1.1)
+
