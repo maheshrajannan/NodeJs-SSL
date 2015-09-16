@@ -5,8 +5,13 @@ var https = require('https');
 var debug = require('debug')('SampleSSL');
 
 //TODO move this to a method.
-var hskey = fs.readFileSync('./Certificates/sampleSSL-key.pem');
-var hscert = fs.readFileSync('./Certificates/sampleSSL-cert.pem');
+var hskey = fs.readFileSync('./Certificates/SelfCertifiedAndSigned/my-server.key.pem');
+var hscert = fs.readFileSync('./Certificates/SelfCertifiedAndSigned/my-server.crt.pem');
+
+require('ssl-root-cas')
+  .inject()
+  .addFile('./Certificates/SelfCertificateAuthority/my-root-ca.crt.pem')
+  ;
 
 var options = {
     key: hskey,
