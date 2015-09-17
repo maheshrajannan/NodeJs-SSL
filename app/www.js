@@ -5,12 +5,18 @@ var https = require('https');
 var debug = require('debug')('SampleSSL');
 
 //TODO move this to a method.
-var hskey = fs.readFileSync('./Certificates/SelfCertifiedAndSigned/my-server.key.pem');
-var hscert = fs.readFileSync('./Certificates/SelfCertifiedAndSigned/my-server.crt.pem');
+//INFO:This is the private key of server, output of step 4.
+var hskey = fs.readFileSync('./certs/server/my-server.key.pem');
+//INFO:This is the signed certificate of server,output of step 6. It is signed by the (self) certificate authority
+//my-root-ca.crt.pem.
+var hscert = fs.readFileSync('./certs/server/my-server.crt.pem');
 
+
+//INFO:This is the self signed certificate authority added to the server.
+//Ouput of step 3 in the diagram.
 require('ssl-root-cas')
   .inject()
-  .addFile('./Certificates/SelfCertificateAuthority/my-root-ca.crt.pem')
+  .addFile('./certs/server/my-root-ca.crt.pem')
   ;
 
 var options = {
